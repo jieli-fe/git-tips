@@ -79,6 +79,7 @@ Git 是一个分布式版本管理工具，版本管理工具就是大家在写�
 * [强制删除 untracked 的目录](#强制删除-untracked-的目录)
 * [展示简化的 commit 历史](#展示简化的-commit-历史)
 * [查看某段代码是谁写的](#查看某段代码是谁写的)
+* [比较两个分支间同一文件差异](#比较两个分支间同一文件差异)
 * [把某一个分支导出成一个文件](#把某一个分支导出成一个文件)
 * [从包中导入分支](#从包中导入分支)
 * [执行 rebase 之前自动 stash](#执行-rebase-之前自动-stash)
@@ -538,6 +539,11 @@ git clean <directory-name> -df
 ## 展示简化的 commit 历史
 ```sh
 git log --pretty=oneline --graph --decorate --all
+```
+
+## 比较两个分支间同一文件差异
+```sh
+git diff 分支A 分支B -- src/xx.js
 ```
 
 ## 把某一个分支导出成一个文件
