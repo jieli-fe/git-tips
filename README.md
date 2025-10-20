@@ -62,6 +62,7 @@ Git 是一个分布式版本管理工具，版本管理工具就是大家在写�
 * [列出所有远程仓库](#列出所有远程仓库)
 * [查看两个星期内的改动](#查看两个星期内的改动)
 * [把 A 分支的某一个 commit，放到 B 分支上](#把-A-分支的某一个-commit放到-B-分支上)
+* [拉取远程代码并把你的 commit 放在后面](#拉取远程代码并把你的 commit 放在后面)
 * [给 git 命令起别名](#给-git-命令起别名)
 * [存储当前的修改，但不用提交 commit](#存储当前的修改但不用提交-commit)
 * [保存当前状态，包括 untracked 的文件](#保存当前状态包括-untracked-的文件)
@@ -437,6 +438,11 @@ git whatchanged --since='2 weeks ago'
 
 ```sh
 git checkout <branch-name> && git cherry-pick <commit-id>
+```
+
+## 拉取远程代码并把你的 commit 放在后面
+```sh
+git pull --rebase
 ```
 
 ## 给 git 命令起别名
